@@ -49,10 +49,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
 	
-# Custom Dalvik flags
-PRODUCT_PROPERTY_OVERRIDES += \
-	dalvik.vm.dexopt-flags=v=a,o=v,u=y,m=y
-
 # Inherit Aries common device configuration.
 $(call inherit-product, device/samsung/aries-common/device_base.mk)
 
